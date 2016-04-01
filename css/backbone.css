@@ -1,0 +1,183 @@
+
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+
+.leftSide {
+    float: left;
+    height: 100%;
+    background-color: whitesmoke;
+    box-shadow: 1px 0px 15px 1px gray;
+}
+
+.rightSide {
+    float: left;
+    width: 400px;
+}
+
+
+form {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 400px;
+    
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+    background-color: #1e90ff;
+}
+
+form .form-control {
+    width: 300px;
+}
+
+form .btn-group {
+    width: 300px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+/* HIDE RADIO */
+label > input{ 
+  display:none;
+}
+
+
+label > input + img { 
+  margin-left: 25px;
+  width: 30px;
+  height: auto;
+  cursor:pointer;
+  opacity: 0.5;
+}
+
+
+label > input:checked + img{ 
+    opacity: 1;
+}
+
+form #start {
+    float: right;
+    margin-left: 320px;
+    margin-top: -60px;
+    
+    position: absolute;
+    cursor: pointer;
+    font-weight: 700;
+    color: whitesmoke;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+form #start:hover {
+    opacity: 1;
+}
+
+form #start:active {
+    color: gainsboro;
+}
+
+.details {
+    background-color: white;
+    height: 90px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: dimgray;
+}
+
+
+.response {
+    position: relative;
+
+    height: 100%;
+    overflow:auto;
+}
+
+.response table {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.response table .path {
+    text-align: left;
+    padding-left: 20px;
+    color: gray;
+}
+
+.response table .time {
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    text-align: right;
+    color: dodgerblue;
+}
+
+.response table .distance {
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    text-align: right;
+    color: goldenrod;
+}
+
+#infos {
+    width: 250px;
+    margin-top: 200px;
+    margin-left: 75px;
+    
+    text-align: center;
+    color: gray;
+    
+    
+}
+
+
+#spinner {
+    margin-top: 200px;
+    margin-left: 168px;
+    
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin .7s infinite linear;
+}
+
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+
+
+
+/* ===== MAP ====*/
+
+
+.rightSide img {
+    margin-left: 100px;
+    margin-top: 50px;
+
+    height: auto;
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+
+
+
+
