@@ -5,7 +5,7 @@ include('Disjkstra.php');
     $to = $_POST['to'];
     
     
-    if (preg_match("/^[A-z]$/", $from) && preg_match("/^[A-z]$/", $to)) 
+    if (preg_match("/^[A-z]{1}$/", $from) && preg_match("/^[A-z]{1}$/", $to)) 
     {
         
         $from = strtolower($from);
