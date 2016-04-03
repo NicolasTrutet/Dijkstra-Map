@@ -162,21 +162,11 @@ form #start:active {
 
 
 
-
-/* ===== MAP ====*/
-
-
-.rightSide img {
+canvas {
     margin-left: 100px;
-    margin-top: 50px;
-
-    height: auto;
     position: absolute;
-    z-index: 10;
+    
 }
-
-
-
 
 
 

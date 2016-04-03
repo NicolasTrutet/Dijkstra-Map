@@ -92,7 +92,8 @@ function GetTimePerPath(TransportMode, distance) {
 
 
 function displayResult(ArrayPath) {
-        
+    
+    
     //Substract 1 because the last element is the object that holds the total distance & time.
     var size = ArrayPath.length-1;
     
@@ -118,20 +119,21 @@ function displayResult(ArrayPath) {
     elem.innerHTML = table;
     
     
+    
+    //Clear canvas 
+    var c = document.getElementById("map2");
+    var ctx = c.getContext("2d");
+    ctx.clearRect(0, 0, c.width, c.height);
+    
+    
+    
     //Display path on map.    
-    var imgTags = '';
     for (var i=0 ; i < size ; i++) 
     {
         var object = ArrayPath[i];
         var path = object['path'];
-        var layer = getLayerByPath(path);
-        
-        //Get image tag with its source.
-        imgTags += BuildNewTagWithLink(layer);
+        DisplayShortestPath(path);
     }
-    
-    //Display the shortest path on the map.
-    AddSubLayerOnMap(imgTags);
 }
 
 

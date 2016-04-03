@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
 <head>
     <title>Map</title>
@@ -58,11 +58,8 @@
     
     <!--  Right Side Map  -->
     <div class="rightSide">
-        
-        <img src="media/Map/map.png">
-        <div id="path"></div>
-        <img src="media/Map/Nodes.png">
-        
+        <canvas id="map" width="800" height="800"></canvas>
+        <canvas id="map2" width="800" height="800"></canvas>
     </div>
     
     
